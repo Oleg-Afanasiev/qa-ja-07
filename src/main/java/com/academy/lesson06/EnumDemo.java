@@ -6,7 +6,7 @@ public class EnumDemo {
     public static void main(String[] args) {
         String gender = "m";
 
-        if (gender.equals("m"))
+//        if (gender.equals("m"))
             System.out.println("Мужчина");
 
         Gender g = Gender.FEMALE;
