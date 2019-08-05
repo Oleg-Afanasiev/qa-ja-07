@@ -24,6 +24,9 @@ public class PolymorphismDemo {
         array[2] = new LabelExt();
         array[3] = "Привет";
         array[4] = new PolymorphismDemo();
+        array[5] = 1;
+
+        int m = 1 + (Integer)array[5];
 
         if (array[3] instanceof Integer) {
             Integer n = (Integer) array[3];

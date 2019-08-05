@@ -1,6 +1,6 @@
 package com.academy.lesson05.component;
 
-public class Label extends Component {
+public class Label extends ComponentAbstract {
 
     public Label() {
     }
