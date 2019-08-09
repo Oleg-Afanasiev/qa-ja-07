@@ -6,6 +6,7 @@ import com.academy.lesson07.sort.comparator.StringBy3LetterComparator;
 import com.academy.lesson07.sort.model.Person;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class SortDemo {
     public static void main(String[] args) {
@@ -55,6 +56,12 @@ public class SortDemo {
 
         System.out.println("---------Sort by name then by age persons-----");
         Arrays.sort(persons, new PersonByNameThenByAgeComparator());
+        // 2
+        Comparator<Person> byNameByAgeComparator = new PersonByNameThenByAgeComparator();
+        Arrays.sort(persons, byNameByAgeComparator);
         System.out.println(Arrays.toString(persons));
+
+        Arrays.sort(array, Comparator.comparingInt(String::length));
+        System.out.println(Arrays.toString(array));
     }
 }

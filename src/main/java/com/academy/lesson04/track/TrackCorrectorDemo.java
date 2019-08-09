@@ -12,6 +12,9 @@ public class TrackCorrectorDemo {
         corrector.lastToLowerCase();
         // фильтруем по диапазону
         corrector.filterByRange(10, 15);
+        // сортируем
+        // corrector.sort()
+        //*** corrector.sort(Comparator)
         // выводим на консоль лезультат
         corrector.println();
 //        System.out.println(Arrays.toString(corrector.getArray()));
