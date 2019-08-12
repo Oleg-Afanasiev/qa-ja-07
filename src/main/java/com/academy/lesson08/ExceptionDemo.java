@@ -32,7 +32,7 @@ public class ExceptionDemo {
 
     private static double div(double x1, double x2) throws DivisionByZeroException {
         if (x2 == 0)
-            throw new DivisionByZeroException("Oleg");
+            throw new DivisionByZeroException("Division by zero");
         return x1/x2;
     }
 }
